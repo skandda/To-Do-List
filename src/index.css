@@ -1,13 +1,174 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'DM+Sans', sans-serif;
+}
+body {
+  background: #3c2f2f;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav,
+.nav-links {
+  display: flex;
+  font-size: 15px;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  /* padding-top: 1rem; */
+  padding: 10px 0;
+  width: 400px;
+  background: #4b3832;
+  margin: 1rem auto;
+  border-radius: 30px;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  
+}
+
+.nav-links a, .desktop-nav button {
+  background: transparent;
+  color: #F7DBA7;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-links a:hover, .desktop-nav button:hover {
+  color: #C57B57;
+  font-size: 15px;
+}
+
+.tool-bar {
+  width: 500px;
+  background: #4b3832;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 30px;
+}
+
+.tool-bar-text {
+  text-align: center;
+  color: 	#F7DBA7;
+  font-weight: 700;
+}
+
+.tool-bar-sub {
+  text-align: center;
+  color: 	#C57B57;
+  font-weight: 100;
+  padding: 0 0 2.4rem 0;
+  font-style: italic;
+}
+
+.add-task {
+  width: 100%;
+  background: #C57B57;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.add-task-text {
+  width: 100%;  
+  background: transparent;
+  padding: 1rem;
+  color: #fff9e6;
+}
+
+.add-task-button {
+  background:#C57B57;
+  color:#F7DBA7;
+  cursor: pointer;
+}
+
+.add-task-button:hover {
+  color: #4b3832;
+}
+
+.tool-bar-todo {
+  color: #F7DBA7;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list .item {
+  background: #C57B57;
+  border-radius: 30px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff9e6;
+  width: 100%
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.done-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.done-list .done-item {
+  background: #F7DBA7;
+  border-radius: 30px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4b3832;
+  width: 100%
+}
+
+.done-desc {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-style: italic;
+}
+
+.done {
+  width: 20px;
+  height: 20px;
+  font-size: 27px !important;
+  cursor: pointer;
+  border-radius: 50%;
+  display: block;
+}
+
+.done:hover {
+  color: #F7DBA7;
+}
+
+.empty {
+  text-align: center;
+  color: #F7DBA7;
 }
